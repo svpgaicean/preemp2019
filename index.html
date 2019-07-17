@@ -8,33 +8,40 @@
     </head>
 
     <body>
-        <div class="thicc_boi"></div>
+        <hr>
         <!-- page header:
             store name, city, phone
             shipping, blog, company, account BUTTONS
             search bar, cart, no of. items in cart
         -->
         <header>
-            <div class="container__top">
-                <div class="top__title">Amazing store</div>
-                <div class="top__city">My city: </div>
-                <div class="top__phone">8 800 505-04-83</div>
-                <ul class="top__links">
-                    <li><a href="./shipping.html">Shipping</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./company.html">Company</a></li>
-                    <li><a href="./account.html">My account</a></li>
-                </ul>
-            </div>
-            <div class="container__bot">
-                <div class="bot__bar">
-                    <!-- work in progress -->
-                    <div class="bot__bar_text">Search products</div>
+            <div class="header__grid">
+                <!-- top row -->
+                <div class="title">
+                    <a href="./index.html">Amazing store</a></div>
+                <div class="city">My city: Dummy name</div>
+                <div class="phone">8 800 505-04-83</div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">My account</a></li>
+                    </ul>
                 </div>
-                <ul class="bot__cart">
-                    <li class="bot__cart_text">MY CART</li>
-                    <li class="bot__cart_quant">15</li>
-                </ul>
+                <!-- bottom row -->
+                <div class="searchbar">
+                    <!-- work in progress -->
+                    <input type="text"
+                        placeholder="Search products by SKU or name">
+                </div>
+                <div class="cart">
+                    <div class="cart_button">
+                        <a href="#">MY CART</a></div>
+                    <div class="cart_quant">
+                        <a href="#">47</a></div>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -45,7 +52,7 @@
             table (GRID !!) with rows and columns with different
             products each item having pic, name and price + link to item
         -->
-        <div class="container__content"></div>
+        <div class="content__grid"></div>
 
         <!-- sidenav class -->
         <!--<nav>
