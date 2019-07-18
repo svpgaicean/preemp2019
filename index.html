@@ -3,62 +3,63 @@
     <head>
         <!-- HTML page for a store -->
         <title>Amazing store</title>
-        <meta name="author" content="Patrik Gaicean">
-        <link rel="stylesheet" href="./styles.css">
+        <meta name="author" content="Patrik Gaicean" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous" />
     </head>
 
     <body>
-        <hr>
-        <!-- page header:
-            store name, city, phone
-            shipping, blog, company, account BUTTONS
-            search bar, cart, no of. items in cart
-        -->
         <header>
-            <div class="header__grid">
-                <!-- top row -->
-                <div class="title">
-                    <a href="./index.html">Amazing store</a></div>
-                <div class="city">My city: Dummy name</div>
-                <div class="phone">8 800 505-04-83</div>
-                <div class="links">
-                    <ul>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">My account</a></li>
-                    </ul>
+            <div class="container dflex">
+                <div class="container__left header_title_spacing">
+                    <a href="./index.html" class="header_title">
+                        Amazing store</a>
                 </div>
-                <!-- bottom row -->
-                <div class="searchbar">
-                    <!-- work in progress -->
-                    <input type="text"
-                        placeholder="Search products by SKU or name">
-                </div>
-                <div class="cart">
-                    <div class="cart_button">
-                        <a href="#">MY CART</a></div>
-                    <div class="cart_quant">
-                        <a href="#">47</a></div>
+                <div class="container__right">
+                    <!-- top row -->
+                    <div class="header_top dflex">
+                        <div>
+                            <i class="fas fa-map-marker-alt header_icon"></i>
+                            <span>My city: <a href="#">Dummy Name</a></span>
+                        </div>
+                        <div>
+                            <i class="far fa-address-book header_icon"></i>
+                            <span>8 800 505-04-83</span>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">My account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- bottom row -->
+                    <div class="header_bot dflex">
+                        <div class="searchbar">
+                            <i class="fas fa-search header_icon"></i>
+                            <input
+                                type="text"
+                                placeholder="Search products by SKU or name"
+                            />
+                        </div>
+                        <button class="cart dflex">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart_text">MY CART</span>
+                            <span class="cart_quant">47</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- main content of the page mini header with 2 rows: category
-            name; page back/forward BUTTONS info (brand, other, other);
-            sort methods
+        <div class="container dflex"></div>
 
-            table (GRID !!) with rows and columns with different
-            products each item having pic, name and price + link to item
-        -->
-        <div class="content__grid"></div>
-
-        <!-- sidenav class -->
-        <!--<nav>
-            <a href="./index.html"><b>Home</b></a>
-            <a href="./prod.html"><b>Products</b></a>
-            <a href="./newprod.html"><b>New Product</b></a>
-        </nav>-->
+        <footer></footer>
     </body>
 </html>
