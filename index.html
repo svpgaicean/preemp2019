@@ -14,20 +14,22 @@
 
     <body>
         <header>
-            <div class="container dflex">
-                <div class="container__left header_title_spacing">
-                    <a href="./index.html" class="header_title">
+            <div class="container">
+                <div class="headerBackground"></div>
+                <div class="container__left flex_col">
+                    <a href="./index.html" class="header_title font_w">
                         Amazing store</a>
                 </div>
                 <div class="container__right">
                     <!-- top row -->
-                    <div class="padflex dflex">
+                    <div class="flex_row">
                         <div>
-                            <i class="fas fa-map-marker-alt header_icon"></i>
-                            <span>My city: <a href="#">Dummy Name</a></span>
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <span>My city:
+                                <a href="#" class="font_b">Dummy Name</a></span>
                         </div>
                         <div>
-                            <i class="far fa-address-book header_icon"></i>
+                            <i class="far fa-address-book icon"></i>
                             <span>8 800 505-04-83</span>
                         </div>
                         <div class="links">
@@ -40,16 +42,16 @@
                         </div>
                     </div>
                     <!-- bottom row -->
-                    <div class="padflex dflex">
+                    <div class="flex_row">
                         <div class="searchbar">
-                            <i class="fas fa-search header_icon"></i>
+                            <i class="fas fa-search icon"></i>
                             <input
                                 type="text"
                                 placeholder="Search products by SKU or name"
                             />
                         </div>
-                        <button class="cart dflex">
-                            <i class="fas fa-shopping-cart"></i>
+                        <button class="flex_cart">
+                            <i class="fas fa-shopping-cart icon"></i>
                             <span class="cart_text">MY CART</span>
                             <span class="cart_quant">47</span>
                         </button>
@@ -58,11 +60,11 @@
             </div>
         </header>
 
-        <div class="container dflex">
+        <div class="container">
             <div class="container__left">
                 <!-- nav bar -->
-                <div class="sidenav sidenav_dflex">
-                    <div class="sidenav_title">ALL CATEGORIES</div>
+                <div class="flex_col sidenav">
+                    <div class="sidenav_title font_g">ALL CATEGORIES</div>
                     <div class="sidenav_categ">Cat1
                         <div class="sidenav_subcateg">name1</div>
                         <div class="sidenav_subcateg">name2</div>
@@ -71,38 +73,38 @@
                         <div class="sidenav_subcateg">name5</div>
                         <div class="sidenav_subcateg">name6</div>
                     </div>
-                    <div class="sidenav_categ">Cat2</div>
-                    <div class="sidenav_categ">Cat3</div>
-                    <div class="sidenav_categ">Cat4</div>
-                    <div class="sidenav_categ">Cat5</div>
+                        <div class="sidenav_categ">Cat2</div>
+                        <div class="sidenav_categ">Cat3</div>
+                        <div class="sidenav_categ">Cat4</div>
+                        <div class="sidenav_categ">Cat5</div>
+                    </div>
                 </div>
-            </div>
             <div class="container__right">
-                <div class="padflex dflex">
+                <div class="flex_row">
                     <div class="category content_title">Creams & gels</div>
                     <div class="pagestats">
-                        <div class="pagestat">Showing x of y</div>
+                        <div class="pagestat font_g">Showing x of y</div>
                         <button class="content_back">
-                            <i class="fas fa-angle-left"></i>
+                            <i class="fas fa-angle-left icon"></i>
                         </button>
                         <button class="content_forw">
-                            <i class="fas fa-angle-right"></i>
+                            <i class="fas fa-angle-right icon"></i>
                         </button>
                     </div>
                 </div>
-                <div class="padflex dflex">
+                <div class="flex_row">
                     <div class="description">
-                        <ul>
-                            <li>BRAND: <a href="#">Dummy Name</a><li>
-                            <li>SKIN TYPE: <a href="#">Dummy Name</a></li>
-                            <li>AGE: <a href="#">Dummy Name</a></li>
+                        <ul class="font_g">
+                            <li>BRAND: <a href="#" class="font_b">Dummy Name</a><li>
+                            <li>SKIN TYPE: <a href="#" class="font_b">Dummy Name</a></li>
+                            <li>AGE: <a href="#" class="font_b">Dummy Name</a></li>
                         </ul>
                     </div>
-                    <div class="sort">SORT: <a href="#">Dummy Name</a></div>
+                    <div class="sort">SORT: <a href="#" class="font_b">Dummy Name</a></div>
                 </div>
                 <hr>
                 <!-- main content -->
-                <div class="content dflex_content">
+                <div class="flex_content">
                     <div class="item">
                         <div class="item-img">11111111</div>
                         <div class="item-name">gdfgasgsafg</div>
@@ -147,6 +149,5 @@
             </div>
         </div>
 
-        <footer></footer>
     </body>
 </html>

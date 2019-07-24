@@ -1,42 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+    box-sizing: border-box;
     font-family: "Helvetica";
     font-size: 16px;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 body {
     background-color: #fff;
 }
 
-header {
+header{
     background-color: #f8cb00;
-    width: 100%;
     border-top: 2px solid #6364d8;
 }
 
-li {
-    display: inline;
-    margin-right: 10px;
-}
-
-hr {
+hr { /* work in progress */
+    border-style: inset;
+    border-width: 1px;
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
 }
 
 /* ---- container settings ---- */
 .container {
+    display: flex;
     margin: 0 auto;
-    min-width: 900px;
     max-width: 1200px;
+    min-width: 900px;
 }
 
 .container__left {
@@ -47,35 +43,79 @@ hr {
     width: 75%;
 }
 
-/* ---- flexbox ---- */
-.dflex {
-    display: flex;
-    /* align-items: center; */
+/* ---- flexbox settings ---- */
+.flex_col {
     align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.flex_row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
-.header_title_spacing {
-    margin-bottom: 80px;
+.flex_content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.padflex {
-    padding: 20px 0;
+.flex_cart {
+    background: #6364d8;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    outline: none;
 }
 
-.header_icon {
-    margin-right: 6px;
+/* ---- misc settings ---- */
+.icon {
+    margin-right: 0.5vw; /* change to vw or something */
+}
+
+.font_w {
+    color: #fff;
+}
+.font_o, .item-price {
+    color: #f8cb00;
+}
+.font_b {
+    color: #6364d8;
+}
+.font_g, .sidenav_subcateg, .sort {
+    color: #8f8f8f;
 }
 
 /* ------ header top row ------ */
 .header_title {
     font-size: 26px;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    padding-left: 20px;
+}
+
+.links li {
+    display: inline;
+    margin-left: 10px;
 }
 
 /* ------ header bot row ------ */
 .searchbar {
     background: #fff;
-    width: 70%;
+    width: 75%;
     padding: 12px 10px;
     border-radius: 5px;
     display: flex;
@@ -85,17 +125,6 @@ hr {
     border: none;
     width: 100%;
     font-size: 16px;
-    outline: none;
-}
-
-.cart {
-    background: #6364d8;
-    margin-left: 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    padding: 0 20px;
     outline: none;
 }
 
@@ -112,7 +141,7 @@ hr {
     transform: translateX(20px);
 }
 
-/* ------ content top row ------ */
+/* ------ pre-content top row ------ */
 .content_title {
     font-size: 26px;
 }
@@ -120,38 +149,40 @@ hr {
 .pagestats {
     display: flex;
 }
-/* ------ content bot row ------ */
+
+/* ------ pre-content bot row ------ */
 .description li {
     display: inline;
+    margin-right: 10px;
 }
 
 /* ------ main content ------ */
-.dflex_content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    /* justify-content: space-between; */
-    margin-left: 20px;
-    margin-right: 20px;
-    flex-wrap: wrap;
-}
-
 .item {
     display: flex;
     flex-direction: column;
     height: 100px;
     width: 20%;
-    /* flex: 1; */
     border: solid 1px #000;
     justify-content: flex-start;
     margin: 20px;
 }
 
 /* ------ sidenav ------ */
-.sidenav_dflex {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: column;
+.sidenav {
+    border: 1px solid;
+    margin-right: 20px;
+    position: relative;
+    top: -20px;
+    background: #fff;
+    box-shadow: 5px 10px #000;
+}
+
+.sidenav_title {
+    margin: 10px 0;
+}
+.sidenav_categ {
+    margin: 10px 0;
+}
+.sidenav_subcateg {
+    margin: 6px 0;
 }
